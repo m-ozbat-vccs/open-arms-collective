@@ -1,0 +1,863 @@
+/* notes will be in lowercase and sections will be ALL CAPS */
+/* CUSTOM FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kumar+One&display=swap');
+
+.madimi-one-regular {
+  font-family: "Madimi One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.kumar-one-regular {
+  font-family: "Kumar One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* RESET STYLE SHEET (this is how you reset the browser's default style sheet) */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* HEADING STYLES */
+
+h1 {
+    font-family: 'Kumar One';
+    font-size: 5.8rem;
+    color: #AC5F07;
+    font-weight: normal;
+    font-style: normal;
+    position: relative;
+    top: 2.8rem; 
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Kumar One';
+    color: #844906;
+    font-weight: normal;
+    font-style: normal;
+}
+
+h3 {
+    font-family: 'Madimi One';
+    color: #844906;
+}
+
+/* NAV */
+  
+.fixed-nav {
+    width: 100%; 
+    background-color: #EFCDA2;
+    top: 0;
+    position: fixed;
+    z-index:999;
+    height: 25%;
+}
+
+.fixed-nav ul {
+    list-style: none;
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+
+.fixed-nav li {
+    float: left;
+    margin-right:2%;
+    padding-right: 8%;
+    padding-left: 2%;
+}
+
+/* create space within the button-padding */
+.fixed-nav a {
+    text-decoration: none;
+    border-radius: 2.5rem;
+    padding-left: 28%;
+    padding-right: 28%;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+#logo {
+    width: 10rem;
+    height: auto;
+}
+
+/* logo <li> item */
+.logo-link {
+    position: absolute;
+    bottom: 2%;
+}
+/* button <li> items */
+.buttons {
+    position: relative;
+    left: 25%;
+}
+.outer-button {
+    background-color: #EFCDA2;
+    color: #AC5F07;
+    border: 2px solid #AC5F07;
+}
+
+.outer-button:hover {
+    background-color: #AC5F07;
+    color: #EFCDA2;
+}
+
+.inner-button {
+    background-color: #AC5F07;
+    color: #EFCDA2;
+    border: 2px solid #AC5F07;
+}
+
+.inner-button:hover {
+    background-color: #EFCDA2;
+    color: #Ac5F07;
+}
+/* END OF NAV */ 
+
+/* BODY STYLES */
+
+body {
+    padding-top: 15%;
+    font-family: 'Madimi One';
+    background-color: #EFCDA2;
+    color: #AC5F07;
+    font-size: 1.5rem;
+}
+
+/* LEAD DIV AND HERO TEXT-HOMEPAGE */
+.intro {
+    margin: 0%;
+    text-align: center;
+    padding-top:1%;
+    padding-bottom: 15%;
+}
+
+p.intro-bottom-text {
+    margin:1%;
+    font-size:1.5rem;
+}
+
+#hero-image { /* lead hero image */
+    border: 2px solid #AC5F07;
+    border-radius: 3.5rem;
+    width: 85%;
+    height: auto;
+}
+
+/* STORIES FLEXBOX-HOMEPAGE */
+
+.stories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+    gap: 2%;
+    padding-bottom:15%;
+    margin-bottom:10%;
+ }   
+
+#story1 {
+   height: 40rem;
+   width: 25rem;
+   order: 1;
+   position: relative;
+   left: 10%;
+}
+p.story1 {
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+#story2 {
+    height: 40rem;
+    width: 25rem;
+    order: 4;
+    position: relative;
+    left: 2%;
+}
+
+p.story2 {
+    font-size: 1.5rem;
+    width: 50%;
+}
+
+#food-drive {
+    height: 40rem;
+    width: 40rem;
+    order: 2;
+    position: relative;
+    left: 10%;
+}
+
+#combo-story {
+   height: 40rem;
+    width: 40rem; 
+    order: 3;
+} 
+
+#image2 { /* food drive image */
+    width: 75%;
+    height: auto;
+    border: 2px solid #AC5F07;
+    border-radius: 3rem;
+}
+
+
+#image3 { /* combo story image */
+    width: 75%;
+    height: auto;
+    border: 2px solid #AC5F07;
+    border-radius: 3rem;
+}
+
+/* END STORIES FLEXBOX-HOMEPAGE */
+
+/* IMAGE OVERLAY BUTTONS-HOMEPAGE */
+
+.shortcuts {
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr ;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 8%;
+    grid-template-areas: 
+        'article1 article2'
+        'article3 article4';
+    padding-bottom: 10%;
+} 
+
+.shortcuts p {
+    color: #844906;
+}
+
+.article1 {
+   position: relative;
+   display: inline-block;
+   grid-area: article1;
+   left: 25%;
+   top: 8%;
+}
+
+.article1 img {
+    display: block;
+}
+
+.article1 p {
+    position: absolute; 
+    top: 50%; left: 15%; right: 0; 
+    transform: translate(0, -50%); 
+    text-align: center;
+    max-width: 50%;
+    font-size: 1.5rem;
+}
+
+.article1 h3 {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    font-size: 1.5rem;
+}
+
+#image4 { /* article1 image for financial assistance */
+    border: 2px solid #AC5F07;
+    border-radius: 48px;
+    width:80%;
+} 
+
+.article2 {
+    grid-area: article2;
+    position: relative;
+    display: inline-block;
+    right: 5%;
+    top: 8%;
+}
+
+.article2 img {
+    display: block;
+}
+
+.article2 p {
+    position: absolute; 
+    top: 50%; left: 15%; right: 0; 
+    transform: translate(0, -50%); 
+    text-align: center;
+    max-width: 50%;
+    font-size: 1.5rem;
+}
+
+.article2 h3 {
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    font-size: 1.5rem;
+}
+
+#image5 { /*article2 image for food bank */
+    border: 2px solid #AC5F07;
+    border-radius: 48px; 
+    width: 80%;
+}
+
+.article3 {
+    grid-area: article3;
+    position: relative;
+    display: inline-block;
+    left: 25%;
+}
+
+.article3 img {
+    display: block;
+}
+
+.article3 p {
+    position: absolute;
+    top: 50%; left: 15%; right: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+    max-width: 50%;
+    font-size: 1.5rem;
+}
+
+.article3 h3 {
+    position: absolute;
+    left: 25%;
+    top: 25%;
+    font-size: 1.5rem;
+}
+
+#image6 { /* article3 image for transportation */
+    border: 2px solid #AC5F07;
+    border-radius: 48px;
+    width: 80%;
+}
+
+.article4 {
+    grid-area: article4;
+    position: relative;
+    display: inline-block;
+    right: 5%;
+}
+
+.article4 img {
+    display: block;
+}
+
+.article4 p {
+    position: absolute;
+    top: 50%; left: 15%; right: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+    max-width: 50%;
+    font-size: 1.5rem;
+}
+
+.article4 h3 {
+    position: absolute;
+    left: 20%;
+    top: 25%;
+    font-size: 1.5rem;
+} 
+
+#image7 { /* article4 image for labor union */
+    border: 2px solid #AC5F07;
+    border-radius: 48px;
+    width: 80%;
+}
+
+/* END IMAGE OVERLAY BUTTON CONTENT-HOMEPAGE */
+
+/* FOOTER */
+footer {
+    background-color: #AC5F07;
+    color: #EFCDA2;
+    width: 100%;
+    border-top-right-radius: 64px;
+    border-top-left-radius: 64px;
+    margin-top:10%;
+    padding-top: 1%;
+    position: relative;
+} 
+
+#footer-heading {
+    position: absolute;
+    left: 13%; 
+    top: 12%;
+    color: #EFCDA2;
+} 
+
+footer h2 {
+    color: #EFCDA2;
+    font-size: 4rem;
+}  
+
+
+#inverse-logo {
+    width: 10rem;
+    height: auto;
+}
+
+/* footer nav links */
+footer div ul li a {
+    color:#EFCDA2;
+    text-decoration: none;
+    margin: 5%;
+} 
+
+footer div ul li {
+    padding: .25%;
+    list-style-type: none;
+    font-size: 2rem;
+    margin-top: 1%;
+}
+
+footer div ul {
+    margin-top: 0;
+    margin-left: 1%;
+    padding-bottom: 5%;
+}
+
+#footer-links {
+    text-align: left;
+}
+
+.footer-nav:hover {
+    text-decoration: underline;
+} 
+/* end footer nav links */
+
+#address {
+    text-align: right;
+    padding: 0;
+    width: 25%;
+    position: absolute;
+    left: 73%;
+    bottom: 10%;
+}
+
+#address p {
+    padding: 3%;
+}
+
+#socials {
+    position: relative;
+    background-color:#AC5F07;
+}
+
+#facebook {
+    width: 4%;
+    height: auto;
+    position: absolute;
+    left: 80%;
+    bottom: 20%;
+}
+
+#youtube {
+    width: 4%;
+    height: auto;
+    position: absolute;
+    bottom: 20%;
+    left: 85%;
+}
+
+#twitter {
+    width: 4%;
+    height: auto;
+    position: absolute;
+    bottom: 25%;
+    left: 90%;
+}
+
+#instagram {
+    width: 4%;
+    height: auto;
+    position: absolute;
+    bottom: 20%;
+    left: 95%;
+}    
+ 
+/* END OF FOOTER CONTENT */
+
+/* ABOUT US PAGE */
+
+.our-story {
+    padding-left: 5%;
+    padding-right: 0;
+    padding-bottom: 5%;
+    padding-top: 0;
+}
+
+.about-body {
+    padding-left: 5%;
+    padding-right: 0;
+    padding-bottom: 5%;
+    padding-top: 0;
+    margin-left: 15%;
+    width: 65%;
+}
+
+.mission {
+    padding-left: 5%;
+    padding-right: 0;
+    padding-bottom: 5%;
+    padding-top: 0;
+    text-align: center;
+}
+
+.vision {
+    padding-left: 5%;
+    padding-right: 0;
+    padding-bottom: 5%;
+    padding-top: 0;
+    text-align: center;
+}
+
+/* END OF ABOUT US STYLES */
+
+/* RESOURCES STYLES */
+
+/* form styles */
+form {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    border: none;
+    border-radius: 2.5rem;
+    background-color: #AC5F07;
+    color:#EFCDA2;
+    font-size: 1.5rem;
+}
+
+label, input {
+  vertical-align: middle; /* Aligns them vertically in the middle */
+} 
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box; 
+}
+
+.radio-button {
+    text-align:center;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+label {
+    color: #EFCDA2;
+}
+
+input[type="submit"],
+    button {
+    background-color: #Ac5F07;
+    color: #EFCDA2;
+    padding: 12px 20px;
+    border: 2px solid #EFCDA2;
+    border-radius: 2.5rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-family: "Madimi One", sans-serif;
+    display: block;
+    margin: 0 auto;
+}
+
+input[type="submit"]:hover,
+    button:hover {
+    background-color: #EFCDA2;
+    color: #Ac5F07;
+}
+legend {
+    color: #EFCDA2;
+    text-align: center;
+}    
+
+fieldset {
+    border: none;
+}
+
+.fin-aid-div {
+    padding-top: 20%;
+}
+
+.contact-div {
+    padding-top: 20%;
+}
+/* end form styles */
+
+.meetings {
+    text-align: center;
+}
+
+.center-h2 {
+    text-align: center;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+/* fundraising section */
+.fundraising-section {
+    display: grid;
+    grid-gap: 5%;
+}
+
+.fundraising-pic {
+    float: left;
+    border: 2px solid #AC5F07;
+    border-radius: 2.5rem;
+}
+
+.fundraising-contact {
+    float: right;
+    text-align: right;
+}
+
+.fundraising-div {
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+
+/* end fundraising section */
+
+/* food bank section */
+
+#food-bank-link {
+    display: grid;
+    grid-gap: 5%;
+    margin-top: 15%;
+}
+
+.food-bank-pic {
+    float: left;
+    border: 2px solid #AC5F07;
+    border-radius: 2.5rem;
+}
+
+.food-bank-contact {
+    float: right;
+    text-align: right;
+}
+
+.food-bank-div {
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+
+.location-graphic {
+    display: inline-block;
+    position: relative;
+}
+
+.location-graphic img {
+    display: block;
+}
+
+.location-graphic p {
+    position: absolute;
+    top: 50%; left: 15%; right: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+    max-width: 50%;
+    font-size: 1.5rem;
+    color:#EFCDA2;
+} 
+
+.location-img {
+    background-image: url(../images/blank-graphic.jpg);
+    background-size: contain;
+    border-radius: 2.5rem;
+    width: 100%;
+    border: 2px solid #AC5F07;
+}
+
+/* end of food bank section */
+
+/* community garden section */
+.community-garden {
+    display: grid;
+    grid-gap: 5%;
+    margin-top: 15%;
+}
+
+.garden-pic {
+    float: left;
+    border: 2px solid #AC5F07;
+    border-radius: 2.5rem;
+}
+
+.garden-contact {
+    float: right;
+    text-align: right;
+}
+
+.garden-contact2 {
+    position: relative;
+    left:40%;
+    bottom: 8rem;
+    width: 70%;
+}
+
+.garden-location {
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+
+.angela {
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+/* end community garden section */
+
+/* labor organizers section */
+#labor-organizers {
+    display: grid;
+    grid-gap: 5%;
+    margin-top: 15%;
+}
+
+.labor-pic {
+    float: left;
+    border: 2px solid #AC5F07;
+    border-radius: 2.5rem; 
+}
+
+.labor-contact {
+    float: right;
+    text-align: right;
+}
+
+.labor-div {
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+
+/* end labor organizers section */
+
+/* transportation section */
+#transpo-list {
+    display: grid;
+    grid-gap: 5%;
+    margin-top: 30%;
+}
+
+.transpo-pic {
+    float: left;
+    border: 2px solid #AC5F07;
+    border-radius: 2.5rem; 
+}
+
+.transpo-contact {
+    float: right;
+    text-align: right;
+}
+
+.talia {
+    position:relative;
+    left:33.3%;
+}
+
+.transpo-div {
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+
+/* end transportation section */
+
+/* childcare section */
+.childcare {
+    display: grid;
+    grid-gap: 5%;
+    margin-top: 15%;
+}
+
+.childcare-pic {
+    float: left;
+    border: 2px solid #AC5F07;
+    border-radius: 2.5rem; 
+}
+
+.childcare-contact {
+    float: right;
+    text-align: right;
+}
+
+.childcare-div {
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+
+/* career counseling */
+
+.career-coach {
+    display: grid;
+    grid-gap: 5%;
+    margin-top: 15%;
+}
+
+.career-pic {
+    float: left;
+    border: 2px solid #AC5F07;
+    border-radius: 2.5rem; 
+}
+
+.career-contact {
+    float: right;
+    text-align: right;
+}
+
+.career-div {
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+/* end career counseling content */
+
+/* family counseling */
+
+.fam-coach {
+    display: grid;
+    grid-gap: 5%;
+    margin-top: 15%;
+}
+
+.family-pic {
+    float: left;
+    border: 2px solid #AC5F07;
+    border-radius: 2.5rem;
+}
+
+.family-contact {
+    float: right;
+    text-align: right;
+}
+
+.family-div {
+    width: 45%;
+    margin-left: 25%;
+    margin-right: 0;
+}
+/* end career counseling content */
+
+/* END RESOURCES STYLES */
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <title>Open Arms Collective - Donate</title>
+</head>
+<body>
+    <header>
+			<!-- navigation -->
+			<nav class="fixed-nav">
+				<ul>
+					<!-- assigning the class to the hyperlink worked while assigning it to the image did not -->
+					<li class="logo-link"><a href="index.html"><img src="images/logo.svg" alt="Open Arms Collective logo" id="logo"></a></li>
+					<li class="buttons"><a href="about.html" class="outer-button">About</a></li>
+					<li class="buttons"><a href="donate.html" class="inner-button">Donate</a></li>
+					<li class="buttons"><a href="volunteer.html" class="inner-button">Volunteer</a></li>
+					<li class="buttons"><a href="resources.html" class="outer-button">Resources</a></li>
+				</ul>	
+			</nav>
+		</header>
+		<!-- end of navigation content -->
+    <main>
+        <h1>Donate</h1>
+         <div class="donate-form">
+                    <form method="post" name="donate-form" action="http://ss1.ciwcertified.com/cgi-bin/process.php">
+                        <fieldset>
+                            <legend>Community Fund Donation</legend>
+                            <label for="fname-donate">First Name:</label>
+                                <input type="text" id="fname-donate" name="firstname" placeholder="First Name..."><br>
+                            <label for="lname-donate">Last Name:</label>
+                                <input type="text" id="lname-donate" name="lastname" placeholder="Last Name..."><br>
+                            <label for="email-donate">Email:</label>
+                                <input type="text" id="email-donate" name="emailus" placeholder="Email Address"><br>
+                            <label for="amount-donate">Donation Amount (in USD)</label>
+                                <input type="text" id="amount-donate" name="donate" placeholder="Enter a dollar amount..."><br>
+                        </fieldset>
+                            <!-- radio button section -->
+                        <fieldset class="radio-button">
+                            <legend>Payment Method:</legend><br> 
+                            <!-- use fieldset for different types of inputs, and legend instead of a stray label like you were using for the label -->
+                            <label for="credit-card-donate">Credit Card</label>
+                                <input type="radio" id="credit-card-donate" name="radio-donation"><br>
+                            <label for="paypal-donate">Paypal</label>
+                                <input type="radio" id="paypal-donate" name="radio-donation"><br>
+                            <label for="cash-app-donate">Cash App</label>
+                                <input type="radio" id="cash-app-donate" name="radio-donation"><br><br>
+                        </fieldset>
+                            <!-- end radio buttons -->
+                            <input type="submit" value="Submit">
+                    </form>
+                </div>
+    </main>
+    <!-- footer content -->
+		<footer>
+			<div id="footer-heading">
+						<h2>Open Arms Collective</h2>	
+			</div>
+			<div id="footer-links">
+				<a href="index.html" class="inverse-logo-link"><img src="images/inverse-logo.svg" alt="Open Arms Collective logo" id="inverse-logo"></a>	
+				<ul>
+					<li><a href="about.html" class="footer-nav">About</a></li>
+					<li><a href="donate.html" class="footer-nav">Donate</a></li>
+					<li><a href="volunteer.html" class="footer-nav">Volunteer</a></li>
+					<li><a href="resources.html" class="footer-nav">Resources</a></li>
+					<li><a href="resources.html#contactus" class="footer-nav">Contact</a></li>
+				</ul>
+			</div>
+			<div id="address">
+				<p>828 Union Drive, Hopewell Virginia, 23860</p>
+				<p>804-555-1986</p>
+			</div>
+			<div id="socials">
+				<a href="#" class="facebook-link"><img src="images/facebook-logo.png" alt="Facebook logo" id="facebook"></a>
+				<a href="#" class="youtube-link"><img src="images/youtube-logo.png" alt="Youtube logo" id="youtube"></a>
+				<a href="#" class="twitter-link"><img src="images/twitter-logo.png" alt="Twitter logo" id="twitter"></a>
+				<a href="#" class="instagram-link"><img src="images/insta-logo.png" alt="Instagram logo" id="instagram"></a>
+			</div>		
+		</footer>
+		<!-- end of footer content -->
+</body>
+</html>
