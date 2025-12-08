@@ -598,6 +598,14 @@ fieldset {
 .contact-div {
     padding-top: 20%;
 }
+
+.volunteer-form {
+    padding-top: 10%;
+}
+
+.donate-form {
+    padding-top:5%;
+}
 /* end form styles */
 
 .meetings {
@@ -861,3 +869,9 @@ fieldset {
 
 /* END RESOURCES STYLES */
 
+/* DONATE PAGE */
+
+.donate-text {
+    margin-left:30%;
+    padding-top:5%;
+}
