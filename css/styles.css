@@ -535,7 +535,7 @@ form {
 
 label, input {
   vertical-align: middle; /* Aligns them vertically in the middle */
-} 
+}  
 
 input[type="text"] {
     width: 100%;
@@ -544,10 +544,6 @@ input[type="text"] {
     border: none;
     border-radius: 3px;
     box-sizing: border-box; 
-}
-
-.radio-button {
-    text-align:center;
 }
 
 form textarea {
@@ -591,6 +587,16 @@ fieldset {
     border: none;
 }
 
+.radio-div-volunteer {
+    position:relative;
+    left:25%;
+}
+
+.radio-div-donate {
+    position:relative;
+    left:40%;
+}
+
 .fin-aid-div {
     padding-top: 20%;
 }
@@ -606,6 +612,7 @@ fieldset {
 .donate-form {
     padding-top:5%;
 }
+
 /* end form styles */
 
 .meetings {

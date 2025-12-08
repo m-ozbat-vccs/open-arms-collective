@@ -41,15 +41,17 @@
                                 <input type="text" id="amount-donate" name="donate" placeholder="Enter a dollar amount..."><br>
                         </fieldset>
                             <!-- radio button section -->
-                        <fieldset class="radio-button">
+                        <fieldset class="radio-button-donate">
                             <legend>Payment Method:</legend><br> 
                             <!-- use fieldset for different types of inputs, and legend instead of a stray label like you were using for the label -->
-                            <label for="credit-card-donate">Credit Card</label>
+                            <div class="radio-div-donate">
+							<label for="credit-card-donate" class="radio-style">Credit Card</label>
                                 <input type="radio" id="credit-card-donate" name="radio-donation"><br>
-                            <label for="paypal-donate">Paypal</label>
+                            <label for="paypal-donate" class="radio-style">Paypal</label>
                                 <input type="radio" id="paypal-donate" name="radio-donation"><br>
-                            <label for="cash-app-donate">Cash App</label>
+                            <label for="cash-app-donate" class="radio-style">Cash App</label>
                                 <input type="radio" id="cash-app-donate" name="radio-donation"><br><br>
+							</div>
                         </fieldset>
                             <!-- end radio buttons -->
                             <input type="submit" value="Submit">
