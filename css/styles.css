@@ -592,11 +592,54 @@ fieldset {
     left:25%;
 }
 
+.radio-div-transpo {
+    position:relative;
+    left:23rem;
+    bottom:2.25rem;
+}
+.radio-div-fundraise {
+    position:relative;
+    left:3.5rem;
+}
+.radio-div-childcare {
+    position:relative;
+    left:5.125rem;
+}
+.radio-div-labor {
+    position:relative;
+    bottom:2rem;
+    left:5.5rem;
+}
+.radio-div-foodbank {
+    position:relative;
+    left:9.9rem;
+}
 .radio-div-donate {
     position:relative;
     left:40%;
 }
-
+.radio-div-garden {
+    position:relative;
+    left:22.7rem;
+    bottom:6.6rem;
+}
+.radio-div-any {
+    position:relative;
+    left:18.65rem;
+    bottom:6.5rem;
+}
+.radio-div-card {
+    position:relative;
+    left:18rem;
+}
+.radio-div-paypal {
+    position:relative;
+    left:20.75rem;
+}
+.radio-div-cashapp {
+    position:relative;
+    left:19.05rem;
+}
 .fin-aid-div {
     padding-top: 20%;
 }
