@@ -44,18 +44,20 @@
                         <fieldset class="radio-button-donate">
                             <legend>Payment Method:</legend><br> 
                             <!-- use fieldset for different types of inputs, and legend instead of a stray label like you were using for the label -->
-                            <div class="radio-div-card">
-							<label for="credit-card-donate" class="radio-style">Credit Card</label>
-                                <input type="radio" id="credit-card-donate" name="radio-donation"><br>
-							</div>
-							<div class="radio-div-paypal">
-                            <label for="paypal-donate" class="radio-style">Paypal</label>
-                                <input type="radio" id="paypal-donate" name="radio-donation"><br>
-							</div>
-							<div class="radio-div-cashapp">
-                            <label for="cash-app-donate" class="radio-style">Cash App</label>
-                                <input type="radio" id="cash-app-donate" name="radio-donation"><br><br>
-							</div>
+                            <p>
+								<!-- order of label/input determines which side the radio button is on -->
+								<input type="radio" id="credit-card-donate" name="radio-donation" checked>
+								<label for="credit-card-donate" class="radio-style">Credit Card</label>
+							</p>
+							<p>
+								<input type="radio" id="paypal-donate" name="radio-donation">
+                            	<label for="paypal-donate" class="radio-style">Paypal</label>
+							</p>
+							<p>
+								<input type="radio" id="cash-app-donate" name="radio-donation">
+                            	<label for="cash-app-donate" class="radio-style">Cash App</label><br><br>
+							</p>
+						<!-- It was helpful to take each label/input out of a div while placing it in a <p> block instead-->
                         </fieldset>
                             <!-- end radio buttons -->
                             <input type="submit" value="Submit">
