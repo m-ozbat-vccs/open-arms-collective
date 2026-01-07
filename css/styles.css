@@ -157,55 +157,78 @@ p.intro-bottom-text {
     flex-wrap: wrap;
     justify-content: center;
     align-content:center;
-    gap: 2%;
+    gap: 10%;
     padding-bottom:15%;
-    margin-bottom:10%;
  }   
 
+ @media (max-width:800px) {
+    .stories {
+        display:flex;
+        flex-direction:column;
+    }
+    #story1 {
+        min-width:85vw;
+        padding-bottom:5rem;
+    }
+    p.story1 {
+        min-width:75vw;
+    }
+    #food-drive {
+        display:none;
+    }
+    #story2 {
+        min-width:85vw;
+        margin-left:20vw;
+    }
+    p.story2 {
+        min-width:75vw;
+    }
+    #combo-story {
+        display:none;
+    }
+ }
+
 #story1 {
-   height: 40rem;
-   width: 25rem;
    order: 1;
-   position: relative;
-   left: 10%;
-}
-p.story1 {
-    font-size: clamp(.5rem, 10vw, 1.5rem);
-    width: 50%;
+   flex:1 1 1;
+   width:24vw;
+   margin-left:20vw;
 }
 
 #story2 {
-    height: 40rem;
-    width: 25rem;
     order: 4;
-    position: relative;
-    left: 2%;
+    flex:1 1 1;
+    width:24vw;
+}
+
+#food-drive {
+    order: 2;
+    flex:1 1 1;
+    margin-left:1vw;
+    padding-bottom:5vw;
+}
+
+#combo-story {
+    order: 3;
+    flex: 1 1 1;
+} 
+
+p.story1 {
+    font-size: clamp(.5rem, 10vw, 1.5rem);
+    max-width:50%;
 }
 
 p.story2 {
     font-size: clamp(.5rem, 10vw, 1.5rem);
-    width: 50%;
+    max-width: 50%;
 }
-
-#food-drive {
-    height: 40rem;
-    width: 40rem;
-    order: 2;
-    position: relative;
-    left: 10%;
-}
-
-#combo-story {
-   height: 40rem;
-    width: 40rem; 
-    order: 3;
-} 
 
 #image2 { /* food drive image */
     width: 75%;
     height: auto;
     border: 2px solid #AC5F07;
     border-radius: 3rem;
+    display:block;
 }
 
 
@@ -214,6 +237,7 @@ p.story2 {
     height: auto;
     border: 2px solid #AC5F07;
     border-radius: 3rem;
+    display:block; 
 }
 
 /* END STORIES FLEXBOX-HOMEPAGE */
@@ -360,7 +384,7 @@ p.story2 {
     transform: translate(0, -50%);
     text-align: center;
     max-width: 50%;
-    font-size: clamp(.5rem, 10vw, 1.5rem);
+    font-size: clamp(.25rem, 10vw, 1.5rem);
 }
 
 .article4 h3 {
@@ -418,7 +442,7 @@ footer div ul li a {
 footer div ul li {
     padding: .25%;
     list-style-type: none;
-    font-size: 2rem;
+    font-size: clamp(.5rem, 10vw, 2rem);
     margin-top: 1%;
 }
 
