@@ -27,7 +27,7 @@
 
 h1 {
     font-family: 'Kumar One';
-    font-size: 5.8rem;
+    font-size: clamp(2rem, 10vw, 5.8rem);
     color: #AC5F07;
     font-weight: normal;
     font-style: normal;
@@ -61,7 +61,7 @@ h3 {
 
 .fixed-nav ul {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 8vw, 1.5rem);
     margin-top: 5%;
 }
 
@@ -127,7 +127,7 @@ body {
     font-family: 'Madimi One';
     background-color: #EFCDA2;
     color: #AC5F07;
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 10vw, 1.5rem);
 }
 
 /* LEAD DIV AND HERO TEXT-HOMEPAGE */
@@ -140,7 +140,7 @@ body {
 
 p.intro-bottom-text {
     margin:1%;
-    font-size:1.5rem;
+    font-size:clamp(.5rem, 10vw, 1.5rem);
 }
 
 #hero-image { /* lead hero image */
@@ -170,7 +170,7 @@ p.intro-bottom-text {
    left: 10%;
 }
 p.story1 {
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 10vw, 1.5rem);
     width: 50%;
 }
 
@@ -183,7 +183,7 @@ p.story1 {
 }
 
 p.story2 {
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 10vw, 1.5rem);
     width: 50%;
 }
 
@@ -255,14 +255,19 @@ p.story2 {
     transform: translate(0, -50%); 
     text-align: center;
     max-width: 50%;
-    font-size: 1.5rem;
+    font-size: clamp(.25rem, 10vw, 1.5rem);
+}
+@media (max-width: 800px){
+    .shortcuts p {
+        display:none;
+    }
 }
 
 .article1 h3 {
     position: absolute;
     left: 25%;
     top: 25%;
-    font-size: 1.5rem;
+    font-size: clamp(.25rem, 10vw, 1.5rem);
 }
 
 #image4 { /* article1 image for financial assistance */
@@ -289,14 +294,14 @@ p.story2 {
     transform: translate(0, -50%); 
     text-align: center;
     max-width: 50%;
-    font-size: 1.5rem;
+    font-size: clamp(.25rem, 10vw, 1.5rem);
 }
 
 .article2 h3 {
     position: absolute;
     left: 30%;
     top: 25%;
-    font-size: 1.5rem;
+    font-size: clamp(.25rem, 10vw, 1.5rem);
 }
 
 #image5 { /*article2 image for food bank */
@@ -322,14 +327,14 @@ p.story2 {
     transform: translate(0, -50%);
     text-align: center;
     max-width: 50%;
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 10vw, 1.5rem);
 }
 
 .article3 h3 {
     position: absolute;
     left: 25%;
     top: 25%;
-    font-size: 1.5rem;
+    font-size: clamp(.25rem, 10vw, 1.5rem);
 }
 
 #image6 { /* article3 image for transportation */
@@ -355,14 +360,14 @@ p.story2 {
     transform: translate(0, -50%);
     text-align: center;
     max-width: 50%;
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 10vw, 1.5rem);
 }
 
 .article4 h3 {
     position: absolute;
     left: 20%;
     top: 25%;
-    font-size: 1.5rem;
+    font-size: clamp(.25rem, 10vw, 1.5rem);
 } 
 
 #image7 { /* article4 image for labor union */
@@ -531,7 +536,7 @@ form {
     border-radius: 2.5rem;
     background-color: #AC5F07;
     color:#EFCDA2;
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 10vw, 1.5rem);
 }
 
 label, input {
@@ -568,7 +573,7 @@ input[type="submit"],
     border: 2px solid #EFCDA2;
     border-radius: 2.5rem;
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 10vw, 1.5rem);
     font-family: "Madimi One", sans-serif;
     display: block;
     margin: 0 auto;
@@ -579,9 +584,11 @@ input[type="submit"]:hover,
     background-color: #EFCDA2;
     color: #Ac5F07;
 }
+
+/* had to set margin to auto on left and right (0 auto shorthand) to center */
 legend {
     color: #EFCDA2;
-    text-align: center;
+    margin:0 auto;
 }    
 
 fieldset {
@@ -753,7 +760,7 @@ fieldset {
     transform: translate(0, -50%);
     text-align: center;
     max-width: 50%;
-    font-size: 1.5rem;
+    font-size: clamp(.5rem, 10vw, 1.5rem);
     color:#EFCDA2;
 } 
 
