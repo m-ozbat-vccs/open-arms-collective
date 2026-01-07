@@ -423,7 +423,7 @@ footer {
 
 footer h2 {
     color: #EFCDA2;
-    font-size: 4rem;
+    font-size: clamp(1.5rem, 10vw, 4rem);
 }  
 
 
