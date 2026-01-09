@@ -127,7 +127,7 @@ body {
     font-family: 'Madimi One';
     background-color: #EFCDA2;
     color: #AC5F07;
-    font-size: clamp(.5rem, 10vw, 1.5rem);
+    font-size: clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
 
 /* LEAD DIV AND HERO TEXT-HOMEPAGE */
@@ -140,7 +140,7 @@ body {
 
 p.intro-bottom-text {
     margin:1%;
-    font-size:clamp(.5rem, 10vw, 1.5rem);
+    font-size:clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
 }
 
 #hero-image { /* lead hero image */
@@ -214,12 +214,12 @@ p.intro-bottom-text {
 } 
 
 p.story1 {
-    font-size: clamp(.5rem, 10vw, 1.5rem);
+    font-size:clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
     max-width:50%;
 }
 
 p.story2 {
-    font-size: clamp(.5rem, 10vw, 1.5rem);
+    font-size:clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
     max-width: 50%;
 }
 
@@ -259,6 +259,7 @@ p.story2 {
 
 .shortcuts p {
     color: #844906;
+    font-size:clamp(1rem, 0.95rem + 0.25vw, 1.25rem);
 }
 
 .article1 {
@@ -279,7 +280,6 @@ p.story2 {
     transform: translate(0, -50%); 
     text-align: center;
     max-width: 50%;
-    font-size: clamp(.25rem, 10vw, 1.5rem);
 }
 @media (max-width: 800px){
     .shortcuts p {
@@ -291,7 +291,13 @@ p.story2 {
     position: absolute;
     left: 25%;
     top: 25%;
-    font-size: clamp(.25rem, 10vw, 1.5rem);
+    font-size:clamp(1.125rem, 1rem + 0.625vw, 1.75rem);
+}
+@media (min-width:600px) {
+    h3 {
+        margin-right:4rem;
+        margin-top:2rem;
+    }
 }
 
 #image4 { /* article1 image for financial assistance */
@@ -318,14 +324,13 @@ p.story2 {
     transform: translate(0, -50%); 
     text-align: center;
     max-width: 50%;
-    font-size: clamp(.25rem, 10vw, 1.5rem);
 }
 
 .article2 h3 {
     position: absolute;
     left: 30%;
     top: 25%;
-    font-size: clamp(.25rem, 10vw, 1.5rem);
+    font-size:clamp(1.125rem, 1rem + 0.625vw, 1.75rem);
 }
 
 #image5 { /*article2 image for food bank */
@@ -351,14 +356,13 @@ p.story2 {
     transform: translate(0, -50%);
     text-align: center;
     max-width: 50%;
-    font-size: clamp(.5rem, 10vw, 1.5rem);
 }
 
 .article3 h3 {
     position: absolute;
     left: 25%;
     top: 25%;
-    font-size: clamp(.25rem, 10vw, 1.5rem);
+    font-size:clamp(1.125rem, 1rem + 0.625vw, 1.75rem);
 }
 
 #image6 { /* article3 image for transportation */
@@ -384,14 +388,13 @@ p.story2 {
     transform: translate(0, -50%);
     text-align: center;
     max-width: 50%;
-    font-size: clamp(.25rem, 10vw, 1.5rem);
 }
 
 .article4 h3 {
     position: absolute;
     left: 20%;
     top: 25%;
-    font-size: clamp(.25rem, 10vw, 1.5rem);
+    font-size:clamp(1.125rem, 1rem + 0.625vw, 1.75rem);
 } 
 
 #image7 { /* article4 image for labor union */
@@ -423,12 +426,12 @@ footer {
 
 footer h2 {
     color: #EFCDA2;
-    font-size: clamp(1.5rem, 10vw, 4rem);
+    font-size:clamp(1.5rem, 1rem + 2.5vw, 4rem);
 }  
 
 
 #inverse-logo {
-    width: 10rem;
+    width:clamp(6rem, 5.2rem + 4vw, 10rem);;
     height: auto;
 }
 
@@ -442,7 +445,7 @@ footer div ul li a {
 footer div ul li {
     padding: .25%;
     list-style-type: none;
-    font-size: clamp(.5rem, 10vw, 2rem);
+    font-size:clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
     margin-top: 1%;
 }
 
@@ -463,6 +466,7 @@ footer div ul {
 
 #address {
     text-align: right;
+    font-size:clamp(1rem, 0.9rem + 0.5vw, 1.5rem);
     padding: 0;
     width: 25%;
     position: absolute;
