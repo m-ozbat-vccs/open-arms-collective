@@ -41,6 +41,7 @@ h2 {
     color: #844906;
     font-weight: normal;
     font-style: normal;
+    clear:both;
 }
 
 h3 {
@@ -56,18 +57,18 @@ h3 {
     top: 0;
     position: fixed;
     z-index:999;
-    height: 25%;
+    height: 18vh;
 }
 
 .fixed-nav ul {
     list-style: none;
     font-size: clamp(1rem, 8vw, 1.5rem);
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
 .fixed-nav li {
     float: left;
-    margin-right:2%;
+    margin-right:2%; 
     padding-right: 8%;
     padding-left: 2%;
 }
@@ -76,10 +77,11 @@ h3 {
 .fixed-nav a {
     text-decoration: none;
     border-radius: 2.5rem;
-    padding-left: 28%;
-    padding-right: 28%;
-    padding-top: 15%;
-    padding-bottom: 15%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display:block;
 }
 
 #logo {
@@ -95,7 +97,7 @@ h3 {
 /* button <li> items */
 .buttons {
     position: relative;
-    left: 25%;
+    left: 18%; 
 }
 .outer-button {
     background-color: #EFCDA2;
@@ -635,7 +637,7 @@ fieldset {
     color:#EFCDA2;
     line-height:2.5rem;
 }
-/* set the ::before state of the radio button */
+/* set the ::before (content) state of the radio button */
 [type="radio"] + label::before {
     content:"";
     position:absolute;
@@ -647,7 +649,7 @@ fieldset {
     top:.70rem;
     left:0;
 }
-/* set the checked ::after state of radio button */
+/* set the checked ::after (content) state of radio button */
 [type="radio"]:checked + label::after {
     content:"";
     position:absolute;
@@ -744,6 +746,7 @@ fieldset {
     width: 45%;
     margin-left: 25%;
     margin-right: 0;
+    clear:both;
 }
 
 /* end fundraising section */
@@ -771,6 +774,7 @@ fieldset {
     width: 45%;
     margin-left: 25%;
     margin-right: 0;
+    clear:both;
 }
 
 .location-graphic {
@@ -803,10 +807,12 @@ fieldset {
 /* end of food bank section */
 
 /* community garden section */
+
 .community-garden {
     display: grid;
     grid-gap: 5%;
     margin-top: 15%;
+    clear:both;
 }
 
 .garden-pic {
@@ -821,10 +827,9 @@ fieldset {
 }
 
 .garden-contact2 {
-    position: relative;
-    left:40%;
-    bottom: 8rem;
+    float:right;
     width: 70%;
+    padding-left:10rem;
 }
 
 .garden-location {
@@ -862,6 +867,7 @@ fieldset {
     width: 45%;
     margin-left: 25%;
     margin-right: 0;
+    clear:both;
 }
 
 /* end labor organizers section */
@@ -885,14 +891,14 @@ fieldset {
 }
 
 .talia {
-    position:relative;
-    left:33.3%;
+    float:right;
 }
 
 .transpo-div {
     width: 45%;
     margin-left: 25%;
     margin-right: 0;
+    clear:both;
 }
 
 /* end transportation section */
@@ -919,6 +925,7 @@ fieldset {
     width: 45%;
     margin-left: 25%;
     margin-right: 0;
+    clear:both;
 }
 
 /* career counseling */
@@ -944,6 +951,7 @@ fieldset {
     width: 45%;
     margin-left: 25%;
     margin-right: 0;
+    clear:both;
 }
 /* end career counseling content */
 
@@ -970,6 +978,7 @@ fieldset {
     width: 45%;
     margin-left: 25%;
     margin-right: 0;
+    clear:both;
 }
 /* end career counseling content */
 
